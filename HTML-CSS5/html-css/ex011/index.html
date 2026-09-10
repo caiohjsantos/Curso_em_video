@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir ees site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-c.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-a.png" type="image/png">
+        <img src="Imagens/foto-h.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+
+    <!--<audio src="midia/good-energy.mp3" controls ></audio>  Uma das maneiras para colocar audio no html, porém neste caso, pode ocorrer de, nem todos os navegadores aceitarem, e dar algum tipo de erro. -->
+   
+    <audio preload="metadata" controls loop>
+        <source src="midia/good-energy.mp3" type="audio/mpeg">
+        <source src="midia/good-energy.ogg" type="audio/ogg">
+        <source src="midia/good-energy.wav" type="audio.wav">
+
+        <!-- Evitar arquivos WAV, pois são arquivos muito grandes, e podem pesar no seu site-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/good-energy.mp3">Clque aqui para baixar o arquivo</a></p>
+    </audio>
+</body>
+</html>

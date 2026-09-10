@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pe-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de esponsividade</title>
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+
+            min-width: 250px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+
+    <main>
+    <h1>Testando responsividade</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, tempora? Voluptatem, numquam fuga! Culpa autem, illum excepturi beatae aliquam error itaque vero, cum soluta accusantium a necessitatibus consequatur impedit dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque necessitatibus incidunt deserunt quas excepturi accusantium! Nihil quas illum magni vitae perferendis, sunt saepe earum eveniet! Impedit ratione possimus accusamus!" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum pariatur ad quia molestias voluptates, vero sit, natus ratione eaque, explicabo facilis possimus quod aliquid tenetur architecto quidem nemo libero quas.</p>
+
+    <!-- 
+    Tag picture para poder deixar a imagem responsiva, ultizando um source por exemplo, onde poderá definir a largura maximo ou minima para que não haja quebra da imagem.
+    -->
+    <picture>
+        <source media="(max-width:500px )" srcset="imagens/irina-blok-pq.jpg">
+        <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+    
+    </picture>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, tempora? Voluptatem, numquam fuga! Culpa autem, illum excepturi beatae aliquam error itaque vero, cum soluta accusantium a necessitatibus consequatur impedit dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum doloremque necessitatibus incidunt deserunt quas excepturi accusantium! Nihil quas illum magni vitae perferendis, sunt saepe earum eveniet! Impedit ratione possimus accusamus!" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum pariatur ad quia molestias voluptates, vero sit, natus ratione eaque, explicabo facilis possimus quod aliquid tenetur architecto quidem nemo libero quas.</p>
+</main>
+
+</body>
+</html>

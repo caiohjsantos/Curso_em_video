@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Informe sua nacionalidade: 
+    <select  id="txtnac">
+        <option value="">-- Selecione um país --</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Portugal">Portugal</option>
+        <option value="França">França</option>
+    </select>
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res" ></div>
+
+    <script>
+        function analisar() {
+    var seletor = document.getElementById('txtnac');
+    var res = document.getElementById('res');
+    
+    // Pegamos o valor da opção selecionada
+    var pais = seletor.value;
+
+    // Verificamos se o usuário realmente selecionou algo
+    if (pais == "") {
+        res.innerHTML = '<p>Por favor, <strong>selecione um país!</strong></p>';
+    } else {
+        res.innerHTML = `<p>Você selecionou: <strong>${pais}</strong>.</p>`;
+
+        if (pais == 'Brasil') {
+            res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`;
+        } else {
+            res.innerHTML += `<p>Você é <strong>Estrangeiro!</strong></p>`;
+        }
+    }
+}
+    </script>
+</body>
+</html>

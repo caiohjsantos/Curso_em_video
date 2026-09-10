@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*
+Em HTML id=  e em CSS é #
+Em HTML class=  e em CSS é . 
+
+No caso do id, em um documento html não pode repetir. Já o class é permitido repetir
+*/
+
+body{
+    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: brown ;
+
+}
+
+h1#principal {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+color: blueviolet;
+}
+
+.basico {
+    color: white;
+
+}
+
+.intermediario {
+    color: blue;
+
+}
+
+.avançado{
+    color: black;
+
+}

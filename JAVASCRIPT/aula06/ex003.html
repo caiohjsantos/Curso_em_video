@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+      body{
+         background-color: blueviolet;
+         color: white;
+         font: normal 20pt Arial;
+      }
+
+      h1{
+         color: gold;
+      }
+      
+    </style>
+ </head>
+ <body>
+    <h1>Olá Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+      //var n1 = window.prompt ('Digite um número: ') //string
+      //var n2 = window.prompt ('Digite outro número: ') //string
+      //var s = n1 + n2
+      //window.alert ('A soma entre os números é,' + s) //concatenação
+      //(number + number) = adição 
+      // (string + string) = concatenação      
+
+      var n1 = Number.parseInt(window.prompt('Digite um número'))// Foi necessário fazer a conversão para que seja o + seja entendido como soma e não concatenação (Number parseint/parseFloat para números reais ex: 5.6)
+      var n2 = Number.parseInt(window.prompt('Digite outro número')) // Foi necessário fazer a conversão para que seja o + seja entendido como soma e não concatenação (Number parseint/parseFloat)
+      var s = n1 + n2
+      window.alert ('A soma entre os números é: '+ s)
+      
+
+      //Number(window.prompt('Digite um número')) // Nas versões mais atualizadas, é pessoal fazer este processo de soma simples apenas com o comando Number
+    </script>
+ </body>
+ </html>

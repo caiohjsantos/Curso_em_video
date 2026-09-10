@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Consulta de naturalidade</h1>
+    Pais de origem: <input type="text" id="txtps">
+    Atualmente você reside em qual pais? <input type="text" id="txtrs">
+    <input type="button" value="Verificar" onclick="analisando()">
+    <div id="res">
+
+    </div>
+
+
+    <script>
+        function analisando(){
+            var Pnas = document.querySelector('input#txtps')
+            var Pmo = document.querySelector('input#txtrs')
+            var res = document.querySelector('div#res')
+            var Rpnas = (txtps.value)
+            var Rpmo = (txtrs.value)
+            if (Rpnas == Rpmo){
+                res.innerHTML = `Nascendo no país ${Rpnas} e morando no pais ${Rpmo} você é nativo`
+            }else
+                res.innerHTML = 'Você é estrangeiro'
+        }
+ 
+    </script>
+</body>
+</html>

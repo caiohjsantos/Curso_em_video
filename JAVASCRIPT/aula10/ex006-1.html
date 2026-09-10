@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Informe sua nacionacilidade: <input type="text" name="txtnac"id="txtnac">
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res">
+    </div>
+
+    <script>
+        function analisar(){
+        var txtnac = document.getElementById('txtnac')
+        var res = document.getElementById('res') 
+        var entrada = txtnac.value.trim().toLowerCase();
+        var paisFormatado = entrada.charAt(0).toUpperCase() + entrada.slice(1);
+        res.innerHTML = `<p>Vivendo em <strong>${paisFormatado}</strong>.</p>`
+        if (entrada == 'brasil'){
+        res.innerHTML += `Você é Brasileiro`
+        } else{
+            res.innerHTML += `Você é Estrangeiro`
+        }
+        txtnac.value = '';
+        txtnac.focus();
+
+        // --- O DESAFIO: ---
+        //txtnac.value = '';  Limpa o que foi digitado
+        //txtnac.focus();     Faz o "pauzinho" do mouse voltar a piscar no campo
+
+
+        }
+    </script>
+    
+</body>
+</html>
