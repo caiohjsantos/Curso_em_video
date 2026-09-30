@@ -1,13 +1,68 @@
 @charset "UTF-8";
+
 *{
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
+    
+    /* configurações gerais ou reset de todos os elementos. Fazendo com que tire qualquer configuração padrão do navegador de margem e padding*/
 }
 
-body{
-    background-color:burlywood
+html, body{
+    min-height: 100vh; /* tamanho minimo do conteudo apresentado na tela. Neste exeplo precisamos deixar o conteudo com batrra de rolagem para fazer o efeito parallax. Se o conteudo não tiver barra de rolagem não teria como fazer */
+    background-color: darkgrey;
 }
 
-div.p01{
+header{   /*Aqui vamos mexer no titulo e o link "conforme esta no html"*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{ /*Aqui vamos mexer apenas no titulo (H1 do header "Cordel Moderno")*/
+    padding: 50px;
+    font-variant: small-caps;   /*Continua tendo todas as letras mauisulas, porém ainda sim a formatação para as primeiras letras serem maiores permanece*/
+    /*Tudo em letra maiuscula = text-transform: uppercase;*/
+}
+
+header > p {
+    padding-bottom: 50px; /*Delimitando os espaços internos do cabeçalho, neste caso*/
+}
+
+header a, footer a { /*configurando o link */
+    color: white; /*cor das letras*/
+    text-decoration:none; /*tirando formatação de decoração como underline. Deixando em NONE, podemos tirar qualquer decoração*/
+    font-weight: bolder; /*Deixando as letras em negrito*/
+}
+
+header a:hover, footer a:hover{ /*a mesma configuração para o link do header, é o mesmo do footer, então podemos aproveitar a mesma configuração do bloco  para ambos*/
+    text-decoration:underline;
+}  /* Com efeito hover, ao passar o mouse em cima do link, o item e evidenciado, aparecendo um sublinhado embaixo*/
+
+section{ /*criadno uma configuração geral para todas as section*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*2 em espaçamento duplo*/
+    padding-left: 30px;
+}
+
+section.normal {
     background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(77, 63, 63);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgb(29, 20, 20);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
