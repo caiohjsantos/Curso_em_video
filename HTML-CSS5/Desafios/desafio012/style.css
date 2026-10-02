@@ -33,7 +33,7 @@ header > h1{ /*Aqui vamos mexer apenas no titulo (H1 do header "Cordel Moderno")
     font-variant: small-caps;   /*Continua tendo todas as letras mauisulas, porém ainda sim a formatação para as primeiras letras serem maiores permanece*/
     /*Tudo em letra maiuscula = text-transform: uppercase;*/
     font-family: var(--fonte2);
-    font-size: 10vw;
+    font-size: 5vw;
 }
 
 header > p {
@@ -56,7 +56,10 @@ section{ /*criadno uma configuração geral para todas as section*/
     line-height: 2em; /*2 em espaçamento duplo*/
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3vw;
+    font-size: 2.5vw;
+}
+section > p {
+    padding-bottom: 1em;
 }
 
 section.normal {
@@ -65,15 +68,30 @@ section.normal {
 }
 
 section.imagem{
-    background-color: rgb(77, 63, 63);
+    background-color: rgb(59, 53, 53);
     color: white;
+    box-shadow: inset 6px 6px 10px 0px black;
+     background-size: cover;
+     background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgb(29, 20, 20);
+    background-color: rgba(43, 37, 37, 0);
     display: inline-block;
     padding: 6px;
+    text-shadow: 3px 2px 2px black;
+}
 
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    
+    
 }
 
 footer{
