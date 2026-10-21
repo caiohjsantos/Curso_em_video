@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
         
@@ -20,10 +21,23 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(139, 131, 131);
+
+        } 
+        <!--Criado este bloco para que o cabeçalho possa acompanhar o conteudo quando scrolado para baixo ou para cima-->
+
         td, th{
             border: 1px solid black;
             padding: 10px;           
         }
+
+        tbody > tr:nth-child(2n) { 
+            background-color: lightgrey;
+            
+        } 
         
         td.num{
             text-align: right;
