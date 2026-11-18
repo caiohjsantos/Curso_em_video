@@ -1,0 +1,46 @@
+<!--Criando formulários-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formuário</h1>
+   <form action="cadastro.php" method="post" autocomplete="off">
+    <p><label for="inome">Nome: </label>
+        <input type="text" name="nome" id="inome"></p>
+    <p><label for="isobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+    <p><input type="submit" value="Enviar"></p>
+   </form>
+    
+</body>
+</html>
+
+<!-- Para criar um formário, é necessário usar a tag <form></form> 
+ * Utilizei as tags input do tipo text, para que fosse criado uma caixa de texto para preencer
+
+ * Utilizei a tag input do tipo Submit, para criar um botão de enviar
+
+ * Usando o método autocomplete="off" é possível tirar (off/on) ou colocar sugestão de   preenchimento
+ c:\Users\romil\OneDrive\Imagens\Screenshots\Captura de tela 2026-11-17 214437.png
+ 
+ * Usamos a tag <label></label>, para fazer a ligação/relacionar entre o atributo e o input, para que possa ser identificado qual caixa está aquela informação. Desta forma é feito uma relação entre a palavra Nome e obejto input.
+ <p><label for="inome">Nome: </label>
+
+ Em php normalmente se usa o "name", já em JavaScript "id"
+ -->
+ 
+ <!-- Metodo de envio GET e POST
+  Indicamos qual será o método de envio do arquivo pelo elemento method=""
+
+ GET -> Método padrão - Podemos usar quando os dados não forem sensíveis - Suporta até 3000 bytes (letras aproximadamente) - Aparece na url no protocolo http
+
+ POST -> Suporta mais de 3.000(letras aproximadamente) bytes e é possível fazer o envio de arquivos, fotos e etc -  Não aparece na url no protocolo http, porém não quer dizer que é mais seguro. É possível capturar os dados que foram preenchidos em inspecionar.
+ Para verificar se a informação está disponivel
+ Inspecionar - Network - indentificar arquivo - Headers
+ -->
+

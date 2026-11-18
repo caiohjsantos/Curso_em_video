@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" size="20" placeholder="Nome">
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8"  maxlength="15" >
+        </p>
+
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> 
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Input type password -> Neste atributo, ao digitar a senha, não aparece os caracteres, apenas os "*"
+ 
+Input do tipo reset -> Neste atributo podemos limpar o que foi digitado nas caixas
+
+* required -> Neste atributo, podemos fazer com que o preenchimento da caixa/input, seja obrigatório. Sem isso, podemos fazer o envio do formulário sem preencher nada.
+
+* minlength/maxlength -> Com este atributo podemos tornar obrigatório o preenchimento de um número minmo de caracteres e maximo.
+minlength="5">
+
+* Size -> Tamanho da caixa, ou quantas letras irá mostrar por vez. Se uma caixa tiver o tamanho 5, mas o conteudo for de 10 caracteres, irá criar uma rolagem lateral até o final do conteudo
+
+* placeholder -> Com este atributo podemos colocar uma legenda/dica para preenchimento do campo
+
+* autocomlete -> É comum e aconselhavel colocar autocompelte em formulário para facilitar a experiencia do usuário. Para isso precisamos colocar na tag form autocomplete= "on". E no input, colocar o autocomplete referente o que aquela caixa representa. Exemplo, se for um campo de usuário Autocomplete="Username". Desta forma o navegador vai identificar o nome de usuário e sugeri-lo. Mesma coisa senha autocomplete="current-password", para senha atual
+
+* Este é o caso onde o método GET, não seria o ideal, por haver dado sensivel como senha, pois o que for inserido irá aparecer na url-->
+
