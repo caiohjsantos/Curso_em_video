@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name" required>
+        </p>
+
+        <p>
+           <label for="imedia">Média</label>
+           <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" value="5" required> 
+        </p>
+
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2020-07">
+           
+        </p>
+
+        <p>
+            <label for="imes">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- Elementos Number, month, date e time em formulários 
+
+* input do tipo number -> Só aceita números 
+ <input type="number" name="media" id="imedia>
+
+* input do tipo Mês -> Abre uma caixa com o calendário contendo mês e ano
+<input type="month" name="mes" id="imes">
+
+* input do tipo dia -> Abre uma caixa com o calendário contendo dia, mês e ano
+<input type="date" name="dia" id="idia">
+
+* input do tipo hora ->
+<input type="time" name="hora" id="ihora">
+
+
+* Max e min -> Usamos o maxlenght anteriormente para limitar a quaintidade minima o maxima de caracteres que poderma aparecer na caixa. Usando max ou min, limitamos o números que podem ser digitados na caixa ex maximo de 10 númerros ou um numero minimo de 0 
+min="0" max="10"
+
+* Step -> Podemos determinar o intervalo entre os números. Usamos este método principalmente com precisamos preencher números quebrados 1.2 1.3 e etc.
+
+* Value -> Podemos utilizar este atributo para definir um valor na caixa, fazendo que a mesma já possua uma sugestão. 
+<input type="month" name="mes" id="imes" value="2020-07">
+Obs: Usando este atributo e um placeholder, o placeholder será desconsiderado
+
+
+-->
